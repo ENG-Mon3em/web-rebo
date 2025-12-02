@@ -1,1 +1,31 @@
-/*Hello dear Ahmed it's your branch :)*/
+.header {
+  background-color: #999900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+.logo {
+  width: 100px;
+  border-radius: 20px;
+}
+.Headerlinks a {
+  color: #ffffff;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.Headerlinks a:hover {
+  background-color: #46350bfb;
+}
+.btn button {
+  padding: 5px 15px;
+  background-color: #4aa4c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.btn button:hover {
+  background-color: #3b08f3fb;
+}
