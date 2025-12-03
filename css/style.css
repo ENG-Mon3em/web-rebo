@@ -1,31 +1,38 @@
-.header {
-  background-color: #999900;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 10px;
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("../fonts/LibreBaskerville-VariableFont_wght.ttf");
+}
+:root {
+  /* الخلفية: بيج فاتح */
+  --bg-color: #FDFBF7; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: var(--bg-color);
 }
 .logo {
   width: 100px;
   border-radius: 20px;
 }
-.Headerlinks a {
-  color: #ffffff;
-  padding: 5px 15px;
-  text-decoration: none;
-  border-radius: 15px;
+.Headerlinks{
+  margin-left: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
 }
-.Headerlinks a:hover {
-  background-color: #46350bfb;
+.Headerlinks .transparent-btn{
+  font-family:'LibreBaskerville';
+  font-weight: 700;
 }
-.btn button {
-  padding: 5px 15px;
-  background-color: #4aa4c7;
-  color: #ffffff;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-}
-.btn button:hover {
-  background-color: #3b08f3fb;
+.Headerlinks button{
+  
+  font-family:'LibreBaskerville';
+  font-weight: 700;
+  margin-left: auto;
 }
