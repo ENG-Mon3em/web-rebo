@@ -1,0 +1,49 @@
+:root {
+  /* الخلفية: بيج فاتح */
+  --bg-color: #FDFBF7; 
+  /* البطاقات: أبيض دافئ */
+  --card-bg: #FFFFFF;
+  /* النصوص الأساسية: بني داكن جداً */
+  --text-primary: #3E2723;
+  /* النصوص الثانوية: بني رمادي */
+  --text-secondary: #5D4037;
+  /*بني نحاسي */
+  --accent-color: #8D6E63;
+  /* الازرار */
+  --btn: #5e4736;
+  /* الخطوط */
+  --font-heading: 'Amiri', serif;
+  --font-body: 'Cairo', sans-serif;
+}
+.header {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: rgba(62, 39, 35, 0.15) 0 1px 13px;
+    border-radius: 0px 0px 10px 10px;
+  }
+.transparent-btn {
+  color: #746042;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-bottom: 2px solid var(--bg-color);
+}
+.transparent-btn:hover {
+  border-bottom: 2px solid var(--accent-color);
+  transition-duration: 400ms;
+}
+.solid-btn {
+  padding: 5px 15px;
+  background-color: var(--btn);
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+.solid-btn:hover {
+  transform: scale(1.1);
+  box-shadow: #8d6e63 0px 0px 6px 0px;
+}
