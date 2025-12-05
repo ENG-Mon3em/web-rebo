@@ -2,37 +2,42 @@
   font-family: "LibreBaskerville";
   src: url("../fonts/LibreBaskerville-VariableFont_wght.ttf");
 }
+
 :root {
   /* الخلفية: بيج فاتح */
-  --bg-color: #FDFBF7; 
+  --bg-color: #FDFBF7;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
   background-color: var(--bg-color);
 }
+
 .logo {
   width: 100px;
   border-radius: 20px;
 }
-.Headerlinks{
+
+.Headerlinks {
   margin-left: 10px;
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
 }
-.Headerlinks .transparent-btn{
-  font-family:'LibreBaskerville';
+
+.Headerlinks .transparent-btn {
+  font-family: 'LibreBaskerville';
   font-weight: 700;
 }
-.Headerlinks button{
-  
-  font-family:'LibreBaskerville';
+
+.Headerlinks button {
+
+  font-family: 'LibreBaskerville';
   font-weight: 700;
   margin-left: auto;
 }
