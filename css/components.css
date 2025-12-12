@@ -1,38 +1,28 @@
 :root {
   /* الخلفية: بيج فاتح */
   --bg-color: #ffffff;
-  /* خلفية الهيدر و الفوتر فقط: بيج فاتح */
-  --bg-color-header-footer: #f8f8f8;
+  /* خلفية الهيدر و الفوتر فقط: ابيض */
+  --bg-color-header-footer: #dadada;
+  /* خلفية اللاندينج: بني عامق */
+  --bg-color-landing: #6a422a;
   /* البطاقات: أبيض دافئ */
   --card-bg: #FFFFFF;
   /* النصوص الأساسية: بني داكن جداً */
-  --text-primary: #3E2723;
+  --text-primary: #746042;
   /* النصوص الثانوية: بني رمادي */
-  --text-secondary: #5D4037;
+  --text-secondary: #5c5a58;
   /*بني نحاسي */
   --accent-color: #8D6E63;
   /* الازرار */
-  --btn: #5e4736;
+  --btn: #5c5a58;
   /* الخطوط */
   --font-heading: 'Amiri', serif;
   --font-body: 'Cairo', sans-serif;
 }
-
-header {
-  background-color: var(--bg-color-header-footer);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: rgba(62, 39, 35, 0.15) 0 1px 13px;
-  border-radius: 0px 0px 10px 10px;
-}
-
 .transparent-btn {
   color: #746042;
   padding: 5px 15px;
   text-decoration: none;
-  border-bottom: 2px solid var(--bg-color);
 }
 
 .transparent-btn:hover {
@@ -53,22 +43,4 @@ header {
 .solid-btn:hover {
   transform: scale(1.1);
   box-shadow: #8d6e63 0px 0px 6px 0px;
-}
-
-footer {
-  background-color: var(--bg-color-header-footer);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 0px 0px 10px 10px;
-}
-footer .socialMediaLinks{
-  display: flex;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-footer p {
-  color: var(--text-secondary);
 }

@@ -18,6 +18,36 @@ body {
   background-color: var(--bg-color);
 }
 
+header {
+  background-color: var(--bg-color-header-footer);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: rgba(62, 39, 35, 0.15) 0 1px 13px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+footer {
+  background-color: var(--bg-color-header-footer);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+footer .socialMediaLinks {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: var(--text-primary);
+}
+
 .logo {
   width: 100px;
   border-radius: 20px;
