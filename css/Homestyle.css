@@ -7,28 +7,6 @@
   color: #ffffff;
   border-radius: 0px 0px 50px 50px;
 }
-.landing_search {
-  margin-top: 15px;
-}
-.landing_search input {
-  border-radius: 15px;
-  padding: 5px 15px;
-  height: 35px;
-  outline: none;
-  border: none;
-}
-.landing_search button {
-  position: absolute;
-  left: 145px;
-  height: 37px;
-  width: 75;
-}
-.landing_search button:hover {
-  border-bottom: none;
-}
-.landing_search-imagecontainer img {
-  border-radius: 25px;
-}
 .landing_text {
   padding: 7px;
 }
@@ -57,6 +35,10 @@ color: var(--text-primary);
   margin:45px;
   background-color: #676665fb;
   border-radius: 25px;
+}
+.card:hover {
+  transition: 1s ease;
+  transform: scale(1.1);
 }
 .card-info {
   color: #ffffff;
