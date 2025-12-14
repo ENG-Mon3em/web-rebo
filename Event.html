@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/Event.js"></script>
+    <script src="./js/Script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/HomeStyle.css">
+    <link rel="stylesheet" href="./css/Event.css">
+    <title>Event</title>
+</head>
+
+<body>
+    <!--StartHeader-->
+    <header>
+        <img class="logo" src="images/logo.png" alt="Logo" />
+        <div class="Headerlinks">
+            <a class="transparent-btn" href="HomePage.html">Home</a>
+            <a class="transparent-btn" href="ShopPage.html">books</a>
+            <a class="transparent-btn" href="ContactPage.html">events</a>
+            <a class="transparent-btn" href="AboutPage.html">About</a>
+            <button class="solid-btn" type="button" onclick="goToSignIn()">Sign in</button>
+        </div>
+    </header>
+    <br>
+    <!--Start Main Content-->
+    <main>
+        <h1>Book Store Events</h1>
+        <!-- Event 1 : Buy Book -->
+        <div class="event-card">
+            <div class="event-header"
+                style="background-image:url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80');"
+                onclick="toggleEvent(this)">
+                <h2> Buy a Book</h2>
+            </div>
+            <div class="event-content">
+                <div class="book-item">
+                    <input type="radio" name="book" value="25"> The Great Gatsby ($25)
+                </div>
+                <div class="book-item">
+                    <input type="radio" name="book" value="30"> To Kill a Mockingbird ($30)
+                </div>
+                <div class="book-item">
+                    <input type="radio" name="book" value="28"> 1984 ($28)
+                </div>
+                Quantity:
+                <input type="number" id="qty" value="1" min="1">
+                <br>
+                <button onclick="calc()">Calculate</button>
+                <div class="result" id="buyResult"></div>
+            </div>
+        </div>
+        <!-- Event 2 : Math Quiz -->
+        <div class="event-card">
+            <div class="event-header"
+                style="background-image:url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80');"
+                onclick="toggleEvent(this)">
+                <h2> Math Quiz</h2>
+            </div>
+            <div class="event-content">
+                <div class="quiz-box" id="question"></div>
+                <input type="number" id="answer" placeholder="Your answer">
+                <br><br>
+                <button onclick="check()">Submit</button>
+                <div class="result" id="quizResult"></div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ceXCjFFBZ4WT4t0JGuD9Rkqj792CK0Uvsy6flDfhNr88OffH7HkynzxIi2TiNuMPBNh85BRTuMLlEG98i9t_IVoBoY6vRscd7fOaa94KhA&s=10" alt="image">
+            <div class="card-content">
+                <h2>معرض القاهرة الدولي للكتاب</h2>
+                <p>معرض القاهرة الدولي للكتاب واحد من أهم الفعاليات الثقافية في العالم العربي، وبيجمع كل سنة محبي القراءة والمعرفة من مختلف الأعمار. المعرض بيقدّم تنوع كبير في الكتب ما بين الأدبية والعلمية والثقافية، وبيكون فرصة مميزة للتواصل مع دور النشر واكتشاف أحدث الإصدارات في أجواء ثقافية ممتعة.</p>
+                <a href="https://cairobookfair.gebo.gov.eg/">Visit Now Website </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/librari.jpg" alt="image">
+            <div class="card-content">
+                <h2>معرض مكتبة الإسكندرية الدولي للكتاب</h2>
+                <p>معرض مكتبة الإسكندرية الدولي للكتاب مناسبة ثقافية مميزة تجمع بين المعرفة والإبداع، ويشارك فيه نخبة من دور النشر والمثقفين من داخل مصر وخارجها. يقدّم المعرض تجربة ثرية لعشّاق القراءة من خلال تنوّع الكتب والندوات والفعاليات التي تناسب جميع الأعمار، ويعكس دور مكتبة الإسكندرية كمركز حضاري لنشر الثقافة والفكر.</p>
+                <a href="https://www.bibalex.org/ar/project/details?documentid=222">Visit Now Website </a>
+                <a href="#top"> Back to Top Page</a>
+            </div>
+        </div>
+    </main>
+    <!--StartFooter-->
+    <footer>
+        <img class="logo" src="images/logo.png" alt="Logo" />
+        <p>WE Are Social</p>
+        <div class="socialMediaLinks">
+            <a href="#"><img src="images/facebook.png" alt="Facebook" width="30px" /></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter" width="30px" /></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram" width="30px" /></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="30px" /></a>
+        </div>
+        <p>© 2025 MaktabetCom. All rights reserved.</p>
+    </footer>
+    <!--endFooter-->
+</body>
+
+</html>
