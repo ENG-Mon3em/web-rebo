@@ -1,0 +1,125 @@
+/* Components */
+
+:root {
+  /* الخلفية: بيج فاتح */
+  --bg-color: #ffffff;
+  /* خلفية الهيدر و الفوتر فقط: ابيض */
+  --bg-color-header-footer: #dadada;
+  /* خلفية اللاندينج: بني عامق */
+  --bg-color-landing: #cb9a7b;
+  /* البطاقات: أبيض دافئ */
+  --card-bg: #FFFFFF;
+  /* النصوص الأساسية: بني داكن جداً */
+  --text-primary: #746042;
+  /* النصوص الثانوية: بني رمادي */
+  --text-secondary: #5c5a58;
+  /*بني نحاسي */
+  --accent-color: #8D6E63;
+  /* الازرار */
+  --btn: #5c5a58;
+  /* الخطوط */
+  --font-heading: 'Amiri', serif;
+  --font-body: 'Cairo', sans-serif;
+}
+
+.transparent-btn {
+  color: #746042;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+.transparent-btn:hover {
+  border-bottom: 2px solid var(--accent-color);
+  transition-duration: 400ms;
+}
+
+.solid-btn {
+  padding: 5px 15px;
+  background-color: var(--btn);
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+
+.solid-btn:hover {
+  transform: scale(1.1);
+  box-shadow: #8d6e63 0px 0px 6px 0px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Main Style Part */
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("../fonts/LibreBaskerville-VariableFont_wght.ttf");
+}
+
+:root {
+  /* الخلفية: بيج فاتح */
+  --bg-color: #FDFBF7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+header {
+  background-color: var(--bg-color-header-footer);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: rgba(62, 39, 35, 0.15) 0 1px 13px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+footer {
+  background-color: var(--bg-color-header-footer);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+footer .socialMediaLinks {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: var(--text-primary);
+}
+
+.logo {
+  width: 100px;
+  border-radius: 20px;
+}
+
+.Headerlinks {
+  margin-left: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.Headerlinks .transparent-btn {
+  font-family: 'LibreBaskerville';
+  font-weight: 700;
+}
+
+.Headerlinks button {
+
+  font-family: 'LibreBaskerville';
+  font-weight: 700;
+  margin-left: auto;
+}
