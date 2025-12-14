@@ -1,0 +1,135 @@
+
+h1 {
+  margin-bottom: 30px;
+  color: var(--text-secondary);
+}
+
+main{
+    padding: 30px;
+}
+
+.event-header {
+  height: 180px;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.event-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.event-header h2 {
+  position: relative;
+  color: #fff;
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.event-content {
+  padding: 0px;
+  max-height: 0px;
+  overflow: hidden;
+
+  transition-duration: 1s;
+}
+
+.event-content.open {
+    padding: 20px;
+    max-height: 300px;
+}
+
+.book-item {
+  margin: 8px 0;
+}
+
+
+
+.result {
+  margin-top: 10px;
+  padding: 0px;
+  border-radius: 18px;
+  background: #ecf8ff;
+  border-left: 4px solid var(--accent-color);
+  overflow: hidden;
+  max-height: 0px;
+  transition-duration: 1s;
+}
+.result.open {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 18px;
+  background: #ecf8ff;
+  border-left: 4px solid var(--accent-color);
+  /* display: block; */
+  overflow: hidden;
+  max-height: 75px;
+}
+/* .quiz-box {
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+} */
+/* //////////////////////////////////// */
+
+/* body {
+font-family: Arial, sans-serif;
+background: #f5f5f5;
+padding: 40px;
+} */
+
+/* .card {
+  display: flex;
+  max-width: 700px;
+  background: #fdeee2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+} */
+
+.card img {
+  width: 220px;
+  height: 100%;
+  object-fit: cover;
+  background: #ddd;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin: 0 0 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: #6b4f3f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.buyResult{
+    display: none;
+}
+.message{
+    transition-duration: 1s;
+    max-height: 0px;
+}

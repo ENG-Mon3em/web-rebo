@@ -1,55 +1,3 @@
-/* Components */
-
-:root {
-  /* الخلفية: بيج فاتح */
-  --bg-color: #ffffff;
-  /* خلفية الهيدر و الفوتر فقط: ابيض */
-  --bg-color-header-footer: #dadada;
-  /* خلفية اللاندينج: بني عامق */
-  --bg-color-landing: #cb9a7b;
-  /* البطاقات: أبيض دافئ */
-  --card-bg: #FFFFFF;
-  /* النصوص الأساسية: بني داكن جداً */
-  --text-primary: #746042;
-  /* النصوص الثانوية: بني رمادي */
-  --text-secondary: #5c5a58;
-  /*بني نحاسي */
-  --accent-color: #8D6E63;
-  /* الازرار */
-  --btn: #5c5a58;
-  /* الخطوط */
-  --font-heading: 'Amiri', serif;
-  --font-body: 'Cairo', sans-serif;
-}
-
-.transparent-btn {
-  color: #746042;
-  padding: 5px 15px;
-  text-decoration: none;
-}
-
-.transparent-btn:hover {
-  border-bottom: 2px solid var(--accent-color);
-  transition-duration: 400ms;
-}
-
-.solid-btn {
-  padding: 5px 15px;
-  background-color: var(--btn);
-  color: #ffffff;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: 400ms ease;
-}
-
-.solid-btn:hover {
-  transform: scale(1.1);
-  box-shadow: #8d6e63 0px 0px 6px 0px;
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-/* Main Style Part */
 @font-face {
   font-family: "LibreBaskerville";
   src: url("../fonts/LibreBaskerville-VariableFont_wght.ttf");
@@ -57,9 +5,23 @@
 
 :root {
   /* الخلفية: بيج فاتح */
-  --bg-color: #FDFBF7;
+  --bg-color: #fdfbf7;
+  /* خلفية الهيدر و الفوتر فقط: بيج فاتح */
+  --bg-color-footer: #f7eee7;
+  /* البطاقات: أبيض دافئ */
+  --card-bg: #ffffff;
+  /* النصوص الأساسية: بني داكن جداً */
+  --text-primary: #3e2723;
+  /* النصوص الثانوية: بني رمادي */
+  --text-secondary: #5d4037;
+  /*بني نحاسي */
+  --accent-color: #b28455;
+  /* الازرار */
+  --btn-dark: #5e4736;
+  /* الخطوط */
+  --font-heading: "Amiri", serif;
+  --font-body: "Cairo", sans-serif;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -70,35 +32,10 @@ body {
   background-color: var(--bg-color);
 }
 
-header {
-  background-color: var(--bg-color-header-footer);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: rgba(62, 39, 35, 0.15) 0 1px 13px;
-  border-radius: 0px 0px 10px 10px;
-}
+/* Components */
 
-footer {
-  background-color: var(--bg-color-header-footer);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 0px 0px 10px 10px;
-}
-
-footer .socialMediaLinks {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-
-footer p {
-  color: var(--text-primary);
-}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Main Style Part */
 
 .logo {
   width: 100px;
@@ -113,13 +50,282 @@ footer p {
 }
 
 .Headerlinks .transparent-btn {
-  font-family: 'LibreBaskerville';
+  font-family: "LibreBaskerville";
   font-weight: 700;
 }
 
 .Headerlinks button {
-
-  font-family: 'LibreBaskerville';
+  font-family: "LibreBaskerville";
   font-weight: 700;
   margin-left: auto;
+}
+
+footer .socialMediaLinks {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: #b2845552;
+  outline: none;
+  transition-duration: 400ms;
+}
+
+footer p {
+  color: var(--text-secondary);
+}
+header {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: rgba(62, 39, 35, 0.15) 0px 2px 13px 1px;
+  border-radius: 0px 0px 10px 10px;
+}
+footer {
+  background-color: var(--bg-color-footer);
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+/* footer .socialMediaLinks {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+} */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  row-gap: 30px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1430px;
+  justify-self: center;
+  padding: 30px;
+}
+
+/* card style */
+
+.card {
+  width: 200px;
+  /* height: 300px; */
+  box-shadow: #00000029 0px 0px 3px 0px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition-duration: 400ms;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: #00000029 0px 0px 20px 0px;
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  width: inherit;
+}
+a:has(.card-img-top) {
+  width: inherit;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-size: 20px;
+  margin: 0px;
+}
+
+.card-text {
+  text-wrap-mode: wrap;
+  text-wrap-style: balance;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+}
+
+/* buttons style */
+
+/* transparent button */
+
+.transparent-btn {
+  color: #746042;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.transparent-btn:hover {
+  border-bottom: 2px solid var(--accent-color);
+  transition-duration: 400ms;
+}
+
+/* solid button */
+
+.solid-btn {
+  padding: 5px 15px;
+  background-color: var(--btn-dark);
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+
+.solid-btn:hover {
+  transform: scale(1.1);
+  box-shadow: #8d6e63 0px 0px 6px 0px;
+}
+
+/* no re-sizeing button */
+
+.static-solid-btn {
+  background-color: var(--btn-dark);
+  border: 2px solid;
+  padding: 5px 35px;
+  border-radius: 45px;
+  font-family: var(--font-body);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
+  transition-duration: 400ms;
+}
+
+.static-solid-btn:hover {
+  /* transform: translateY(-3px); */
+  color: #3e2723;
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 0px 7px rgba(0, 0, 0, 0.2);
+  background-color: #fff1e4;
+}
+
+/* form */
+.form {
+  width: 400px;
+  height: 500px;
+  /* margin-top: 20px; */
+  /* padding-top: 20px; */
+  border-radius: 18px;
+  box-shadow: #0000003b 0px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+.form-input {
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: #b2845552;
+  outline: none;
+  transition-duration: 400ms;
+}
+.form-input:focus-within {
+  border-color: var(--accent-color);
+}
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 100px 70px 100px;
+}
+.form-title {
+  font-size: 30px;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+/* evet cards */
+
+.event-img-card {
+  margin: 20px 0 0 20px;
+  border-radius: 13px;
+  width: 95%;
+  background-color: #ffefdebf;
+  /* text-align: center; */
+  box-shadow: #00000045 0 0 3px;
+  justify-self: center;
+  padding: 20px;
+  display: flex;
+}
+.event-card {
+  margin: 20px 0 0 20px;
+  border-radius: 13px;
+  width: 95%;
+  background-color: #ffefdebf;
+  /* text-align: center; */
+  box-shadow: #00000045 0 0 3px;
+  justify-self: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-primary);
+  overflow: hidden;
+  max-height: 100px;
+  transition-duration: 1s;
+}
+.event-card:hover{
+  max-height: 470px;
+}
+.event-card-question {
+  background-color: #eadcc6;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 20px;
+}
+.event-input-group {
+  padding: 30px;
+}
+.event-input-group input {
+  outline: none;
+  border-width: 0 0 2px 0;
+  border-color: var(--btn-dark);
+  padding: 5px;
+  background-color: transparent;
+  text-align: center;
+}
+.event-input-group input::-webkit-outer-spin-button,
+.event-input-group input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.event-card-title {
+  margin-bottom: 30px;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+.event-card-image {
+  width: 30%;
+  height: fit-content;
+  border-radius: 13px;
+}
+.event-card-body {
+  padding: 20px;
+}
+.event-text {
+  color: var(--text-secondary);
+}
+.event-card-body div {
+  margin-top: 30px;
 }

@@ -6,19 +6,21 @@
   padding: 25px 15px;
   color: #ffffff;
   border-radius: 0px 0px 50px 50px;
+  box-shadow: #ba734a47 0px 20px 20px 0px;
+  background-color: #c79071;
 }
 .landing_text {
   padding: 7px;
 }
 .trendy-container {
   padding: 5px 15px;
-  margin:15px 0px 0px 0px;
+  margin: 15px 0px 0px 0px;
 }
 .trendy_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin:0px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
 }
 .trendy_header span {
   color: var(--text-secondary);
@@ -26,13 +28,13 @@
 }
 .trendy_header h1 {
   margin: 0px;
-color: var(--text-primary);
+  color: var(--text-primary);
 }
 .trendy-cards-container {
   display: flex;
 }
-.card{
-  margin:45px;
+/* .card {
+  margin: 45px;
   background-color: #676665fb;
   border-radius: 25px;
 }
@@ -47,4 +49,4 @@ color: var(--text-primary);
 }
 .card-info img {
   border-radius: 25px 25px 0px 0px;
-}
+} */
