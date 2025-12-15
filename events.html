@@ -12,12 +12,14 @@
 
 <body>
   <header id="Head">
-    <a href="HomePage.html"><img class="logo" src="images/logo.png" alt="Logo" /></a>
-    <div class="Headerlinks">
-      <a class="transparent-btn" href="HomePage.html">Home</a>
-      <a class="transparent-btn" href="BooksPage.html">Books</a>
-      <a class="transparent-btn" style="border-bottom-color: #b28455;" href="events.html">Events</a>
-      <a class="transparent-btn" href="about.html">About</a>
+    <div id="menu" onclick="openMenu();"><img class="logo" src="images/logo.png" alt="Logo" /></div>
+    <div  class="Headerlinks">
+        <div id="menuBody">
+          <a class="transparent-btn"  href="HomePage.html">Home</a>
+          <a class="transparent-btn" href="BooksPage.html">Books</a>
+          <a class="transparent-btn" style="border-bottom-color: #b28455;" href="events.html">Events</a>
+          <a class="transparent-btn" href="about.html">About</a>
+        </div>
       <button class="solid-btn" type="button" onclick="goToSignIn()">Sign in</button>
     </div>
   </header>
@@ -40,7 +42,7 @@
     </div>
     <!-- Events adds -->
     <div class="event-img-card">
-      <img src="./images/cairoBookFair.webp" alt="image" width="300" height="200">
+      <img src="./images/cairoBookFair.png" alt="image" width="300" height="200">
       <div class="event-card-body">
         <h2 class="event-card-title">Cairo International Book Fair</h2>
         <p class="event-card-text">The Cairo International Book Fair is one of the most important cultural events in the
@@ -51,7 +53,7 @@
       </div>
     </div>
     <div class="event-img-card">
-      <img src="./images/alexBookFairPhoto.jpg" alt="image" width="300" height="200">
+      <img src="./images/alexBookFairPhoto.png" alt="image" width="300" height="200">
       <div class="event-card-body">
         <h2 class="event-card-title">Alexandria Library International Book Fair</h2>
         <p class="event-card-text">The Alexandria Library International Book Fair is a distinguished cultural event that
@@ -63,7 +65,7 @@
       </div>
     </div>
     <div class="event-img-card">
-      <img src="./images/Frankfurt Studio Cornelia Funke Halle 4.jpg" alt="image" width="300" height="200">
+      <img src="./images/Frankfurt Studio Cornelia Funke Halle 4.png" alt="image" width="300" height="200">
       <div class="event-card-body">
         <h2 class="event-card-title">Frankfurt Book Fair</h2>
         <p class="event-card-text">The Frankfurt Book Fair is the world's largest and most significant trade fair for
@@ -90,6 +92,7 @@
   </footer>
   <!--endFooter-->
   <script src="./js/eventScripts.js"></script>
+  <script src="js/Script.js"></script>
 </body>
 
 </html>

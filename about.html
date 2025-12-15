@@ -13,12 +13,14 @@
 <body class="body">
   <!--StartHeader-->
   <header id="Head">
-    <a href="HomePage.html"><img class="logo" src="images/logo.png" alt="Logo" /></a>
-    <div class="Headerlinks">
-      <a class="transparent-btn" href="HomePage.html">Home</a>
-      <a class="transparent-btn" href="BooksPage.html">Books</a>
-      <a class="transparent-btn" href="events.html">Events</a>
-      <a class="transparent-btn" style="border-bottom-color: #b28455;" href="about.html">About</a>
+    <div id="menu" onclick="openMenu();"><img class="logo" src="images/logo.png" alt="Logo" /></div>
+    <div  class="Headerlinks">
+        <div id="menuBody">
+          <a class="transparent-btn"  href="HomePage.html">Home</a>
+          <a class="transparent-btn" href="BooksPage.html">Books</a>
+          <a class="transparent-btn" href="events.html">Events</a>
+          <a class="transparent-btn" style="border-bottom-color: #b28455;" href="about.html">About</a>
+        </div>
       <button class="solid-btn" type="button" onclick="goToSignIn()">Sign in</button>
     </div>
   </header>
@@ -30,7 +32,7 @@
       Maktabet<u>C</u>om
     </div>
     <h1>about our project</h1>
-    <p>Welcome to MaktabetCom. For over few days, we are working serve the heart of the readers. We believe that access
+    <p>Welcome to MaktabetCom. For We are working to capture the hearts of readers of the readers. We believe that access
       to information is a fundamental right, and our mission is to empower, educate, and inspire every person who walks
       through our doors or visits us online.</p>
     <br>
@@ -65,6 +67,7 @@
     <p>© 2025 MaktabetCom. All rights reserved.</p>
   </footer>
   <!--endFooter-->
+  <script src="js/Script.js"></script>
 </body>
 
 </html>

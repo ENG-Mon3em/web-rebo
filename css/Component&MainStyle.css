@@ -12,6 +12,8 @@
   --card-bg: #ffffff;
   /* النصوص الأساسية: بني داكن جداً */
   --text-primary: #3e2723;
+
+  --bg-color-landing: #c79071;
   /* النصوص الثانوية: بني رمادي */
   --text-secondary: #5d4037;
   /*بني نحاسي */
@@ -32,6 +34,9 @@
 body {
   background-color: var(--bg-color);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Components */
 
@@ -42,16 +47,31 @@ body {
   width: 100px;
   border-radius: 20px;
 }
-
+#menuBody {
+  height: 27px;
+  transition-duration: 400ms;
+  transform: translateX(0px);
+}
+#menu::after {
+  content: " ";
+  display: inline-block;
+  width: 2px;
+  height: 50px;
+  margin-top: 15px;
+  position: absolute;
+  background-color: #b28455;
+}
 .Headerlinks {
   display: flex;
   align-items: center;
   margin-left: 10px;
   display: flex;
   width: 100%;
+  overflow: hidden;
   justify-content: flex-start;
+  /* max-width: 0; */
 }
- /* تعديل على الستايل الخاص بالتاريخ في الهيدر */
+/* تعديل على الستايل الخاص بالتاريخ في الهيدر */
 .Headerlinks p {
   margin-left: auto;
   font-family: "LibreBaskerville";
@@ -107,12 +127,6 @@ footer {
   padding: 10px 20px;
   border-radius: 0px 0px 10px 10px;
 }
-
-/* footer .socialMediaLinks {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 10px;
-} */
 
 .container {
   display: flex;
@@ -218,7 +232,6 @@ a:has(.card-img-top) {
 }
 
 .static-solid-btn:hover {
-  /* transform: translateY(-3px); */
   color: #3e2723;
   border: 2px solid var(--accent-color);
   box-shadow: 0 0px 7px rgba(0, 0, 0, 0.2);
@@ -229,8 +242,6 @@ a:has(.card-img-top) {
 .form {
   width: 400px;
   height: 500px;
-  /* margin-top: 20px; */
-  /* padding-top: 20px; */
   border-radius: 18px;
   box-shadow: #0000003b 0px 0px 5px;
   display: flex;
@@ -280,7 +291,6 @@ a:has(.card-img-top) {
   border-radius: 13px;
   width: 95%;
   background-color: #ffefdebf;
-  /* text-align: center; */
   box-shadow: #00000045 0 0 3px;
   justify-self: center;
   padding: 20px;
@@ -292,7 +302,6 @@ a:has(.card-img-top) {
   border-radius: 13px;
   width: 95%;
   background-color: #ffefdebf;
-  /* text-align: center; */
   box-shadow: #00000045 0 0 3px;
   justify-self: center;
   padding: 20px;
@@ -302,11 +311,10 @@ a:has(.card-img-top) {
   color: var(--text-primary);
   overflow: hidden;
   max-height: 100px;
-  transition-duration: 1s;
+  transition-duration: 700ms;
 }
-
 .event-card:hover {
-  max-height: 470px;
+  max-height: 320px;
 }
 
 .event-card-question {
