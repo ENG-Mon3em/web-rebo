@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./js/Script.js"></script>
   <link rel="stylesheet" href="./css/Homestyle.css">
   <link rel="stylesheet" href="./css/Component&MainStyle.css">
   <title>MaktabetCom</title> <!--عنوان مؤقت-->
@@ -12,13 +11,14 @@
 
 <body class="body">
   <!--StartHeader-->
-  <header>
+  <header id="Head">
     <a href="HomePage.html"><img class="logo" src="images/logo.png" alt="Logo" /></a>
     <div class="Headerlinks">
       <a class="transparent-btn" style="border-bottom-color: #b28455;" href="HomePage.html">Home</a>
       <a class="transparent-btn" href="BooksPage.html">Books</a>
       <a class="transparent-btn" href="events.html">Events</a>
       <a class="transparent-btn" href="about.html">About</a>
+      <p id="simpleDate"></p>
       <button class="solid-btn" type="button" onclick="goToSignIn()">Sign in</button>
     </div>
   </header>
@@ -52,28 +52,28 @@
       </div>
       <div class="container">
         <div class="card">
-          <a href="#"><img class="card-img-top" src="images/jpg.png"  alt="Book Cover" /></a>
+          <a><img class="card-img-top" src="images/jpg.png" alt="Book Cover" /></a>
           <div class="card-body">
             <h3 class="card-title">book_name</h3>
             <p class="card-text">book_description</p>
           </div>
         </div>
         <div class="card">
-          <a href="#"><img class="card-img-top" src="images/jpg.png"  alt="Book Cover" /></a>
+          <a><img class="card-img-top" src="images/jpg.png" alt="Book Cover" /></a>
           <div class="card-body">
             <h3 class="card-title">book_name</h3>
             <p class="card-text">book_description</p>
           </div>
         </div>
         <div class="card">
-          <a href="#"><img class="card-img-top" src="images/jpg.png"  alt="Book Cover" /></a>
+          <a><img class="card-img-top" src="images/jpg.png" alt="Book Cover" /></a>
           <div class="card-body">
             <h3 class="card-title">book_name</h3>
             <p class="card-text">book_description</p>
           </div>
         </div>
         <div class="card">
-          <a href="#"><img class="card-img-top" src="images/jpg.png"  alt="Book Cover" /></a>
+          <a><img class="card-img-top" src="images/jpg.png" alt="Book Cover" /></a>
           <div class="card-body">
             <h3 class="card-title">book_name</h3>
             <p class="card-text">book_description</p>
@@ -83,19 +83,24 @@
     </div>
     </div>
   </main>
+  <a href="#Head" class="Upbutton"><button>Up</button></a>
   <!--StartFooter-->
   <footer>
     <img class="logo" src="images/logo.png" alt="Logo" />
     <p>WE Are Social</p>
     <div class="socialMediaLinks">
-      <a href="#"><img src="images/facebook.png" alt="Facebook" width="30px" /></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter" width="30px" /></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram" width="30px" /></a>
-      <a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="30px" /></a>
+      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"
+          width="30px" /></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" width="30px" /></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"
+          width="30px" /></a>
+      <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"
+          width="30px" /></a>
     </div>
     <p>© 2025 MaktabetCom. All rights reserved.</p>
   </footer>
   <!--endFooter-->
+  <script src="./js/Script.js"></script>
 </body>
 
 </html>

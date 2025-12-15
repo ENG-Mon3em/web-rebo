@@ -1,6 +1,10 @@
+//redirect to sign in page function
 function goToSignIn() {
   window.location.href = "SignInPage.html";
 }
+
+
+//email and password check function
 function check_email_password() {
   let e_mail1 = "valt@gmail.com";
   let password1 = "1234";
@@ -21,23 +25,31 @@ function check_email_password() {
   } else {
     alert("Failed to sign in");
   }
-}
-if (e_mail2 == mal) {
-  if (password2 == pass) {
-    alert("successful sign in");
+  if (e_mail2 == mal) {
+    if (password2 == pass) {
+      alert("successful sign in");
+    } else {
+      alert("Incorrect password");
+    }
   } else {
-    alert("Incorrect password");
+    alert("Failed to sign in");
   }
-} else {
-  alert("Failed to sign in");
-}
 
-if (e_mail3 == mal) {
-  if (password3 == pass) {
-    alert("successful sign in");
+  if (e_mail3 == mal) {
+    if (password3 == pass) {
+      alert("successful sign in");
+    } else {
+      alert("Incorrect password");
+    }
   } else {
-    alert("Incorrect password");
+    alert("Failed to sign in");
   }
-} else {
-  alert("Failed to sign in");
 }
+//date display function
+function displaySimpleDate() {
+  const now = new Date();
+  const dateString = now.toLocaleString();
+  const dateElement = document.getElementById('simpleDate');
+  dateElement.textContent = dateString;
+}
+displaySimpleDate();

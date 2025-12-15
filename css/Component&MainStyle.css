@@ -22,6 +22,7 @@
   --font-heading: "Amiri", serif;
   --font-body: "Cairo", sans-serif;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -43,10 +44,19 @@ body {
 }
 
 .Headerlinks {
+  display: flex;
+  align-items: center;
   margin-left: 10px;
   display: flex;
   width: 100%;
   justify-content: flex-start;
+}
+ /* تعديل على الستايل الخاص بالتاريخ في الهيدر */
+.Headerlinks p {
+  margin-left: auto;
+  font-family: "LibreBaskerville";
+  font-weight: 700;
+  color: var(--text-secondary);
 }
 
 .Headerlinks .transparent-btn {
@@ -76,6 +86,7 @@ footer .socialMediaLinks {
 footer p {
   color: var(--text-secondary);
 }
+
 header {
   background-color: var(--bg-color);
   display: flex;
@@ -85,6 +96,7 @@ header {
   box-shadow: rgba(62, 39, 35, 0.15) 0px 2px 13px 1px;
   border-radius: 0px 0px 10px 10px;
 }
+
 footer {
   background-color: var(--bg-color-footer);
   display: flex;
@@ -95,6 +107,7 @@ footer {
   padding: 10px 20px;
   border-radius: 0px 0px 10px 10px;
 }
+
 /* footer .socialMediaLinks {
   display: flex;
   gap: 15px;
@@ -123,6 +136,7 @@ footer {
   transition-duration: 400ms;
   cursor: pointer;
 }
+
 .card:hover {
   box-shadow: #00000029 0px 0px 20px 0px;
   transform: scale(1.02);
@@ -131,6 +145,7 @@ footer {
 .card-img-top {
   width: inherit;
 }
+
 a:has(.card-img-top) {
   width: inherit;
 }
@@ -224,6 +239,7 @@ a:has(.card-img-top) {
   align-items: center;
   justify-self: center;
 }
+
 .form-input {
   width: 200px;
   height: 30px;
@@ -237,14 +253,17 @@ a:has(.card-img-top) {
   outline: none;
   transition-duration: 400ms;
 }
+
 .form-input:focus-within {
   border-color: var(--accent-color);
 }
+
 .form-input-container {
   display: flex;
   flex-direction: column;
   padding: 100px 100px 70px 100px;
 }
+
 .form-title {
   font-size: 30px;
   color: var(--text-primary);
@@ -267,6 +286,7 @@ a:has(.card-img-top) {
   padding: 20px;
   display: flex;
 }
+
 .event-card {
   margin: 20px 0 0 20px;
   border-radius: 13px;
@@ -284,9 +304,11 @@ a:has(.card-img-top) {
   max-height: 100px;
   transition-duration: 1s;
 }
-.event-card:hover{
+
+.event-card:hover {
   max-height: 470px;
 }
+
 .event-card-question {
   background-color: #eadcc6;
   padding: 20px;
@@ -295,9 +317,11 @@ a:has(.card-img-top) {
   color: var(--text-secondary);
   font-size: 20px;
 }
+
 .event-input-group {
   padding: 30px;
 }
+
 .event-input-group input {
   outline: none;
   border-width: 0 0 2px 0;
@@ -306,26 +330,48 @@ a:has(.card-img-top) {
   background-color: transparent;
   text-align: center;
 }
+
 .event-input-group input::-webkit-outer-spin-button,
 .event-input-group input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
 .event-card-title {
   margin-bottom: 30px;
   margin-bottom: 10px;
   color: var(--text-primary);
 }
+
 .event-card-image {
   width: 30%;
   height: fit-content;
   border-radius: 13px;
 }
+
 .event-card-body {
   padding: 20px;
 }
+
 .event-text {
   color: var(--text-secondary);
 }
+
 .event-card-body div {
   margin-top: 30px;
+}
+
+.Upbutton {
+  position: fixed;
+  right: 25px;
+  bottom: 50px;
+  z-index: 100;
+}
+
+.Upbutton button {
+  padding: 18px;
+  background-color: var(--btn-dark);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
