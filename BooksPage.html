@@ -12,16 +12,18 @@
 
 <body class="body">
    <!--StartHeader-->
-   <header id="Head">
-      <a href="HomePage.html"><img class="logo" src="images/logo.png" alt="Logo" /></a>
-      <div class="Headerlinks">
-         <a class="transparent-btn" href="HomePage.html">Home</a>
-         <a class="transparent-btn" style="border-bottom-color: #b28455;" href="BooksPage.html">Books</a>
-         <a class="transparent-btn" href="events.html">Events</a>
-         <a class="transparent-btn" href="about.html">About</a>
-         <button class="solid-btn" type="button" onclick="goToSignIn()">Sign in</button>
-      </div>
-   </header>
+  <header id="Head">
+    <div id="menu" onclick="openMenu();"><img class="logo" src="images/logo.png" alt="Logo" /></div>
+    <div  class="Headerlinks">
+        <div id="menuBody">
+          <a class="transparent-btn" href="HomePage.html">Home</a>
+          <a class="transparent-btn" style="border-bottom-color: #b28455;" href="BooksPage.html">Books</a>
+          <a class="transparent-btn" href="events.html">Events</a>
+          <a class="transparent-btn" href="about.html">About</a>
+        </div>
+      <button class="solid-btn" type="button" onclick="goToSignIn()">Sign in</button>
+    </div>
+  </header>
    <!--StartHeader-->
    <main>
       <!--Start Main Content-->
@@ -81,6 +83,7 @@
       <p>© 2025 MaktabetCom. All rights reserved.</p>
    </footer>
    <!--endFooter-->
+   <script src="js/Script.js"></script>
 </body>
 
 </html>

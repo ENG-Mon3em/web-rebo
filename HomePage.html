@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="10">
+  <!-- <meta http-equiv="refresh" content="10"> -->
   <link rel="stylesheet" href="./css/Homestyle.css">
   <link rel="stylesheet" href="./css/Component&MainStyle.css">
   <title>MaktabetCom</title> <!--عنوان مؤقت-->
@@ -13,12 +13,14 @@
 <body class="body">
   <!--StartHeader-->
   <header id="Head">
-    <a href="HomePage.html"><img class="logo" src="images/logo.png" alt="Logo" /></a>
+    <div id="menu" onclick="openMenu();"><img class="logo" src="images/logo.png" alt="Logo" /></div>
     <div class="Headerlinks">
-      <a class="transparent-btn" style="border-bottom-color: #b28455;" href="HomePage.html">Home</a>
-      <a class="transparent-btn" href="BooksPage.html">Books</a>
-      <a class="transparent-btn" href="events.html">Events</a>
-      <a class="transparent-btn" href="about.html">About</a>
+        <div id="menuBody">
+          <a class="transparent-btn" style="border-bottom-color: #b28455;" href="HomePage.html">Home</a>
+          <a class="transparent-btn" href="BooksPage.html">Books</a>
+          <a class="transparent-btn" href="events.html">Events</a>
+          <a class="transparent-btn" href="about.html">About</a>
+        </div>
       <p id="simpleDate"></p>
       <button class="solid-btn" type="button" onclick="goToSignIn()">Sign in</button>
     </div>

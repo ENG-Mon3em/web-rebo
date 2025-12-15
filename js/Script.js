@@ -1,3 +1,5 @@
+
+let menuIsOpend = true;
 //redirect to sign in page function
 function goToSignIn() {
   window.location.href = "SignInPage.html";
@@ -52,4 +54,17 @@ function displaySimpleDate() {
   const dateElement = document.getElementById('simpleDate');
   dateElement.textContent = dateString;
 }
-displaySimpleDate();
+setInterval(() => {
+  if(document.getElementById('simpleDate'))displaySimpleDate();
+}, 1000);
+
+function openMenu() {
+  var menuBody = document.getElementById("menuBody");
+  if (menuIsOpend) {
+    menuBody.style.transform = "translateX(-500px)";
+    menuIsOpend = !menuIsOpend;
+  }else{
+    menuBody.style.transform = "translateX(0px)";
+    menuIsOpend = !menuIsOpend;
+  }
+}
