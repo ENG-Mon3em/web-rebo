@@ -18,33 +18,32 @@ function check_email_password() {
   let mal = document.getElementById("e").value;
   let pass = document.getElementById("p").value;
 
-  if (e_mail1 == mal) {
-    if (password1 == pass) {
-      alert("successful sign in");
-    } else {
-      alert("Incorrect password");
-    }
-  } else {
-    alert("Failed to sign in");
-  }
-  if (e_mail2 == mal) {
-    if (password2 == pass) {
-      alert("successful sign in");
-    } else {
-      alert("Incorrect password");
-    }
-  } else {
-    alert("Failed to sign in");
-  }
+switch (mal) {
+    case e_mail1:
+      if (password1 == pass) {
+        alert("successful sign in");
+      } else {
+        alert("Incorrect password");
+      }
+      break;
+    case e_mail2:
+      if (password2 == pass) {
+        alert("successful sign in");
+      } else {
+        alert("Incorrect password");
+      }
+      break;
+    case e_mail3:
+      if (password3 == pass) {
+        alert("successful sign in");
+      } else {
+        alert("Incorrect password");
+      }
+      break;
 
-  if (e_mail3 == mal) {
-    if (password3 == pass) {
-      alert("successful sign in");
-    } else {
-      alert("Incorrect password");
-    }
-  } else {
-    alert("Failed to sign in");
+    default:
+      alert("Failed to sign in");
+      break;
   }
 }
 //date display function
