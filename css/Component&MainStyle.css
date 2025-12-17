@@ -69,6 +69,7 @@ html {
   width: 100%;
   overflow: hidden;
   justify-content: flex-start;
+  height: 50px;
   /* max-width: 0; */
 }
 /* تعديل على الستايل الخاص بالتاريخ في الهيدر */
@@ -88,6 +89,7 @@ html {
   font-family: "LibreBaskerville";
   font-weight: 700;
   margin-left: auto;
+  margin-right: 10px;
 }
 
 footer .socialMediaLinks {
@@ -112,7 +114,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px 10px 20px;
   box-shadow: rgba(62, 39, 35, 0.15) 0px 2px 13px 1px;
   border-radius: 0px 0px 10px 10px;
 }
@@ -143,8 +145,8 @@ footer {
 
 .card {
   width: 200px;
-  /* height: 300px; */
-  box-shadow: #00000029 0px 0px 3px 0px;
+  height: fit-content;
+  box-shadow: #0000003b 0px 0px 5px 0px;
   border-radius: 15px;
   overflow: hidden;
   transition-duration: 400ms;
@@ -158,6 +160,8 @@ footer {
 
 .card-img-top {
   width: inherit;
+  display: block;
+  /* بشكل افتراضي، المتصفح بيتعامل مع الصور (<img>) على أنها عناصر Inline (زي الحروف والكلمات). وعشان كده، المتصفح بيسيب مسافة صغيرة تحت الصورة عشان "حروف الهجاء اللي بتنزل تحت السطر" (زي حرف الـ j, g, y, p) فيما يسمى الـ Baseline. */
 }
 
 a:has(.card-img-top) {
@@ -177,7 +181,7 @@ a:has(.card-img-top) {
 
 .card-text {
   text-wrap-mode: wrap;
-  text-wrap-style: balance;
+  /* text-wrap-style: balance; */
   color: var(--text-secondary);
   font-family: var(--font-body);
 }
