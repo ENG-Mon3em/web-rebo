@@ -10,23 +10,25 @@
 </head>
 
 <body>
-    <div >
-        <form class="form" id="signInForm">
-            <img src="./images/logo.png" alt="Logo" class="logo">
-            <h2 class="form-title">Sign In</h2>
-            <!-- <label for="email">Email:</label> -->
-            <input placeholder="E-mail" class="form-input" type="email" id="e" name="email" required/>
-            <br>
-            <!-- <label for="password">Password:</label> -->
-            <input placeholder="Password" class="form-input" type="password" id="p" name="password" required/>
-            <br>
-            <button class="static-solid-btn" type="submit" onclick="check_email_password()">Sign In</button>
-            <br>
-            <a href="HomePage.html"><button class="static-solid-btn" type="button">Back</button></a>
-        </form>
-        <p id="message"></p>
-    </div>
-    <script src="./js/Script.js"></script>
+<div>
+    <form class="form" id="signInForm">
+        <img src="./images/logo.png" alt="Logo" class="logo">
+        <h2 class="form-title">Sign In</h2>
+        <!-- <label for="email">Email:</label> -->
+        <input placeholder="E-mail" class="form-input" type="email" id="e" name="email" required/>
+        <br>
+        <!-- <label for="password">Password:</label> -->
+        <input placeholder="Password" class="form-input" type="password" id="p" name="password" required/>
+        <br>
+        <button class="static-solid-btn" type="submit" onclick="check_email_password()">Sign In</button>
+        <br>
+        <a href="index.html">
+            <button class="static-solid-btn" type="button">Back</button>
+        </a>
+    </form>
+    <p id="message"></p>
+</div>
+<script src="./js/Script.js"></script>
 </body>
 
 </html>

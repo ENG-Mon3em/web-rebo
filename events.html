@@ -2,97 +2,103 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./js/Script.js"></script>
-  <link rel="stylesheet" href="css/event.css">
-  <link rel="stylesheet" href="css/Component&MainStyle.css">
-  <title>MaktabetCom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/Script.js"></script>
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/Component&MainStyle.css">
+    <title>MaktabetCom</title>
 </head>
 
 <body>
-  <header id="Head">
-    <div id="menu" onclick="openMenu();"><img class="logo" src="images/logo.png" alt="Logo" /></div>
-    <div  class="Headerlinks">
+<header id="Head">
+    <div id="menu" onclick="openMenu();"><img class="logo" src="images/logo.png" alt="Logo"/></div>
+    <div class="Headerlinks">
         <div id="menuBody">
-          <a class="transparent-btn"  href="HomePage.html">Home</a>
-          <a class="transparent-btn" href="BooksPage.html">Books</a>
-          <a class="transparent-btn" style="border-bottom-color: #b28455;" href="events.html">Events</a>
-          <a class="transparent-btn" href="about.html">About</a>
+            <a class="transparent-btn" style="border-bottom-color: #b28455;" href="index.html">Home</a>
+            <a class="transparent-btn" href="BooksPage.html">Books</a>
+            <a class="transparent-btn" style="border-bottom-color: #b28455;" href="events.html">Events</a>
+            <a class="transparent-btn" href="about.html">About</a>
         </div>
-      <button class="solid-btn" type="button" onclick="goToSignIn()">Sign in</button>
+        <button class="solid-btn" type="button" onclick="goToSignIn()">Sign in</button>
     </div>
-  </header>
-  <!--Start Main Content-->
-  <main>
+</header>
+<!--Start Main Content-->
+<main>
     <h1>Book Store Events</h1>
     <!-- Math Quiz Competition -->
     <div class="event-card">
-      <div class="event-card-body">
-        <h2 class="event-title" id="event2-title">
-          🧮 Math Quiz Competition
-        </h2>
-        <div class="event-card-question" id="question">9 × 14 = ?</div>
-      </div>
-      <div class="message" id="quizResult"></div>
-      <div class="event-input-group">
-        <input type="number" id="answer" placeholder="Enter your answer" />
-      </div>
-      <button class="static-solid-btn" onclick="check()">Submit</button>
+        <div class="event-card-body">
+            <h2 class="event-title" id="event2-title">
+                🧮 Math Quiz Competition
+            </h2>
+            <div class="event-card-question" id="question">9 × 14 = ?</div>
+        </div>
+        <div class="message" id="quizResult"></div>
+        <div class="event-input-group">
+            <input type="number" id="answer" placeholder="Enter your answer"/>
+        </div>
+        <button class="static-solid-btn" onclick="check()">Submit</button>
     </div>
     <!-- Events adds -->
     <div class="event-img-card">
-      <img src="./images/cairoBookFair.png" alt="image" width="300" height="200">
-      <div class="event-card-body">
-        <h2 class="event-card-title">Cairo International Book Fair</h2>
-        <p class="event-card-text">The Cairo International Book Fair is one of the most important cultural events in the
-          Arab world, and brings together all...
-          The year of reading lovers
-          And knowledge of different ages.</p>
-        <a class="static-solid-btn btn" href="https://cairobookfair.gebo.gov.eg/" target="_blank">Visit Now Website </a>
-      </div>
+        <img src="./images/cairoBookFair.png" alt="image" width="300" height="200">
+        <div class="event-card-body">
+            <h2 class="event-card-title">Cairo International Book Fair</h2>
+            <p class="event-card-text">The Cairo International Book Fair is one of the most important cultural events in
+                the
+                Arab world, and brings together all...
+                The year of reading lovers
+                And knowledge of different ages.</p>
+            <a class="static-solid-btn btn" href="https://cairobookfair.gebo.gov.eg/" target="_blank">Visit Now
+                Website </a>
+        </div>
     </div>
     <div class="event-img-card">
-      <img src="./images/alexBookFairPhoto.png" alt="image" width="300" height="200">
-      <div class="event-card-body">
-        <h2 class="event-card-title">Alexandria Library International Book Fair</h2>
-        <p class="event-card-text">The Alexandria Library International Book Fair is a distinguished cultural event that
-          combines knowledge and creativity.
-          An elite group of people participate in it
-          Publishing and intellectuals from inside and outside Egypt.</p>
-        <a class="static-solid-btn btn" href="https://www.bibalex.org/ar/project/details?documentid=222"
-          target="_blank">Visit Now Website </a>
-      </div>
+        <img src="./images/alexBookFairPhoto.png" alt="image" width="300" height="200">
+        <div class="event-card-body">
+            <h2 class="event-card-title">Alexandria Library International Book Fair</h2>
+            <p class="event-card-text">The Alexandria Library International Book Fair is a distinguished cultural event
+                that
+                combines knowledge and creativity.
+                An elite group of people participate in it
+                Publishing and intellectuals from inside and outside Egypt.</p>
+            <a class="static-solid-btn btn" href="https://www.bibalex.org/ar/project/details?documentid=222"
+               target="_blank">Visit Now Website </a>
+        </div>
     </div>
     <div class="event-img-card">
-      <img src="./images/Frankfurt Studio Cornelia Funke Halle 4.png" alt="image" width="300" height="200">
-      <div class="event-card-body">
-        <h2 class="event-card-title">Frankfurt Book Fair</h2>
-        <p class="event-card-text">The Frankfurt Book Fair is the world's largest and most significant trade fair for
-          books, held annually in Frankfurt, Germany.</p>
-        <a class="static-solid-btn btn" href="https://www.buchmesse.de/en" target="_blank">Visit Now Website </a>
-      </div>
+        <img src="./images/Frankfurt Studio Cornelia Funke Halle 4.png" alt="image" width="300" height="200">
+        <div class="event-card-body">
+            <h2 class="event-card-title">Frankfurt Book Fair</h2>
+            <p class="event-card-text">The Frankfurt Book Fair is the world's largest and most significant trade fair
+                for
+                books, held annually in Frankfurt, Germany.</p>
+            <a class="static-solid-btn btn" href="https://www.buchmesse.de/en" target="_blank">Visit Now Website </a>
+        </div>
     </div>
-  </main>
-  <a href="#Head" class="Upbutton"><button>Up</button></a>
-  <!--StartFooter-->
-  <footer>
-    <img class="logo" src="images/logo.png" alt="Logo" />
+</main>
+<a href="#Head" class="Upbutton">
+    <button>Up</button>
+</a>
+<!--StartFooter-->
+<footer>
+    <img class="logo" src="images/logo.png" alt="Logo"/>
     <p>WE Are Social</p>
     <div class="socialMediaLinks">
-      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"
-          width="30px" /></a>
-      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" width="30px" /></a>
-      <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"
-          width="30px" /></a>
-      <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"
-          width="30px" /></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"
+                                                                width="30px"/></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" width="30px"/></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"
+                                                                 width="30px"/></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"
+                                                                width="30px"/></a>
     </div>
     <p>© 2025 MaktabetCom. All rights reserved.</p>
-  </footer>
-  <!--endFooter-->
-  <script src="./js/eventScripts.js"></script>
-  <script src="js/Script.js"></script>
+</footer>
+<!--endFooter-->
+<script src="./js/eventScripts.js"></script>
+<script src="js/Script.js"></script>
 </body>
 
 </html>
